@@ -4,7 +4,7 @@ services:
     front:
         build: ./front
         ports:
-            - 8000:8000
+            - 8000:80
         environment:
             BACK_URL: http://localhost:8001
     back:

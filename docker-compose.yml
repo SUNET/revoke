@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+    front:
+        build: ./front
+        ports:
+            - 8000:8000
+        environment:
+            BACK_URL: http://localhost:8001
+    back:
+        build: ./back
+        ports:
+            - 8001:8001
+        environment:
+            OCSP_URL: http://ocsp:8002
+    ocsp:
+        build: ./ocsp
+        ports:
+            - 8002:8002

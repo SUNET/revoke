@@ -17,3 +17,9 @@ services:
         build: ./ocsp
         ports:
             - 8002:8002
+        volumes:
+            - ocsp-db:/usr/src/app/db
+        environment:
+            DB: /usr/src/app/db/revoked.sqlite
+volumes:
+    ocsp-db:

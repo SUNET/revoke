@@ -13,6 +13,7 @@ services:
             - 8001:8001
         environment:
             OCSP_URL: http://ocsp:8002
+            JWT_URL: https://jwt:1443/api/v1.0/auth
     ocsp:
         build: ./ocsp
         ports:
@@ -21,5 +22,14 @@ services:
             - ocsp-db:/usr/src/app/db
         environment:
             DB: /usr/src/app/db/revoked.sqlite
+    jwt:
+        image: docker.sunet.se/auth-server-poc:latest
+        ports:
+            - 8003:1443
+        volumes:
+            - jwt-cert:/opt/auth-server-poc/cert
+            - jwt-user-db:/opt/auth-server-poc/userdb
 volumes:
     ocsp-db:
+    jwt-cert:
+    jwt-user-db:

@@ -13,6 +13,8 @@ services:
         build: ./back
         ports:
             - 8001:8001
+        volumes:
+            - back-certs:/usr/src/app/certs
         environment:
             OCSP_URL: http://ocsp:8002
             JWT_URL: https://jwt:1443/api/v1.0/auth
@@ -32,6 +34,7 @@ services:
             - jwt-cert:/opt/auth-server-poc/cert
             - jwt-user-db:/opt/auth-server-poc/userdb
 volumes:
+    back-certs:
     ocsp-db:
     jwt-cert:
     jwt-user-db:

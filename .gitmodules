@@ -7,6 +7,3 @@
 [submodule "front"]
 	path = front
 	url = git@github.com:ernstwi/revoke-front.git
-[submodule "auth-server-poc"]
-	path = auth-server-poc
-	url = git@github.com:ernstwi/auth-server-poc.git

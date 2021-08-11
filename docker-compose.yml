@@ -23,7 +23,7 @@ services:
         environment:
             DB: /usr/src/app/db/revoked.sqlite
     jwt:
-        image: docker.sunet.se/auth-server-poc:latest
+        build: auth-server-poc/docker/auth-server-poc
         ports:
             - 8003:1443
         volumes:

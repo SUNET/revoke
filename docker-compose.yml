@@ -6,6 +6,7 @@ services:
             context: ./front
             args:
                 BACK_URL: http://localhost:8001
+                JWT_URL: https://localhost:8003
         ports:
             - 8000:80
     back:

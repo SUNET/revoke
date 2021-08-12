@@ -16,7 +16,7 @@ ocsp/certs/responder_key.pem
 Initialize and start all containers using:
 
 ```
-docker-compose up -d build
+docker-compose up -d --build
 ./jwt-setup
 ./verify-setup
 docker-compose restart

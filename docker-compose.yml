@@ -18,6 +18,7 @@ services:
         environment:
             OCSP_URL: http://ocsp:8002
             JWT_URL: https://jwt:1443/api/v1.0/auth
+            JWT_USER: test
     ocsp:
         build: ./ocsp
         ports:

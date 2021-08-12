@@ -2,7 +2,7 @@
 docker cp jwt.crt revoke_jwt_1:/etc/nginx/conf.d/snakeoil.crt
 docker cp jwt.key revoke_jwt_1:/etc/nginx/conf.d/snakeoil.key
 
-# Add .htpasswd containing ernst:ernst
+# Add .htpasswd containing test:test
 docker cp htpasswd revoke_jwt_1:/opt/auth-server-poc/userdb/.htpasswd
 
 # Generate public/private JWT signing keypair

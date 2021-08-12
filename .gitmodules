@@ -1,9 +1,9 @@
 [submodule "back"]
 	path = back
-	url = git@github.com:ernstwi/revoke-back.git
+	url = git@github.com:SUNET/revoke-back.git
 [submodule "ocsp"]
 	path = ocsp
-	url = git@github.com:ernstwi/revoke-ocsp.git
+	url = git@github.com:SUNET/revoke-ocsp.git
 [submodule "front"]
 	path = front
-	url = git@github.com:ernstwi/revoke-front.git
+	url = git@github.com:SUNET/revoke-front.git

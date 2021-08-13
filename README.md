@@ -1,5 +1,11 @@
 # revoke
 
+This repo contains an OCSP server with a front end for managing certificate revocations. The current state of the system is illustrated below.
+
+<p align='center'>
+    <img src="./components.png">
+</p>
+
 ## Test setup
 
 The following files are required:
